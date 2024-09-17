@@ -15,8 +15,9 @@ class Figure():
     self.color = color 
     self.changingThePawnAuthorityFlagNoMoreThanOne = 1
     self.number_of_mov = 0
-    
     self.new_board = None # haloo 
+    
+    
     
 
     if self.color == 'white':

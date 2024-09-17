@@ -5,6 +5,9 @@ from figure import Pawn, King, Knight, Bishop, Queen, Rook
 
 class Board:
   PADDING = 10
+  
+  
+  
   def __init__(self):
     self.board = [
             ['bR', 'bN', 'bB', 'bQ', 'bK', 'bB', 'bN', 'bR'],
@@ -16,7 +19,7 @@ class Board:
             ['wP', 'wP', 'wP', 'wP', 'wP', 'wP', 'wP', 'wP'],
             ['wR', 'wN', 'wB', 'wQ', 'wK', 'wB', 'wN', 'wR']
         ]
-    self.IMAGES = self.load_images() 
+    self.IMAGES = self.load_images()
     self.pieces = self.initialize_pieces()
     
 
