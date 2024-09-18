@@ -9,37 +9,10 @@ import select
 FPS = 60
 WIN = pygame.display.set_mode((WIDTH,HEIGHT))
 
-# sieci 
-PORT = 5010
-SERVER = '192.168.0.36'
-ADDR = (SERVER, PORT)
-HEADER = 70 
-FORMAT = 'utf-8'
-client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(ADDR)
-client.setblocking(False)
+
 pygame.init()
 
-def send(msg):
-  message = pickle.dumps(msg) # objekt w ciag bajtow 
-  msg_length = len(message)
-  send_length = str(msg_length).encode(FORMAT)
-  send_length += b' ' * (HEADER - len(send_length))
-  client.send(send_length + message)
-  
-def receive_data():
-   try:
-     data_header = client.recv(HEADER).decode(FORMAT)
-     if data_header:
-       data_length = int(data_header.strip()) # usuwa ciagi znaku 
-       serialized_data = b''
-       while len(serialized_data) < data_length:
-         serialized_data += client.recv(data_length - len(serialized_data))
-       board = pickle.loads(serialized_data)
-       return board
-     return None
-   except Exception as e:
-     return None
+
 
 
 def main():
@@ -86,7 +59,6 @@ def main():
             and board.board[mouseY][mouseX][1] == 'P'):
           obj_temp.changingThePawnAuthority(mouse_position[0], mouse_position[1], board, WIN, figure)
           obj_temp.changingThePawnAuthorityFlagNoMoreThanOne -= 1
-          
           figure.changingThePawnAuthorityFlag = False
           
     
