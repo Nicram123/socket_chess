@@ -64,7 +64,7 @@ class Board:
       pieces = ['bB', 'bK', 'bN', 'bP', 'bQ', 'bR', 'wB', 'wK', 'wN', 'wP', 'wQ', 'wR']
       images = {}
       for piece in pieces:
-          image = pygame.image.load(f'{piece}.png').convert_alpha() # objekty obsługują przezroczystość - convert_alpha()
+          image = pygame.image.load(f'pictures/{piece}.png').convert_alpha() # objekty obsługują przezroczystość - convert_alpha()
           image.set_colorkey(WHITE)  # Ustawienie białego tła jako przezroczyste
           images[piece] = image
       return images

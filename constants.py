@@ -33,10 +33,10 @@ HOVER_COLOR = (150, 150, 150)
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # Załaduj obrazy pionków
-queen_img = pygame.image.load('bqueen.jpg')
-rook_img = pygame.image.load('brook.jpg')
-bishop_img = pygame.image.load('bbish.jpg')
-knight_img = pygame.image.load('bknight.jpg')
+queen_img = pygame.image.load('pictures/bqueen.jpg')
+rook_img = pygame.image.load('pictures/brook.jpg')
+bishop_img = pygame.image.load('pictures/bbish.jpg')
+knight_img = pygame.image.load('pictures/bknight.jpg')
 
 # Skalowanie obrazów
 queen_img = pygame.transform.scale(queen_img, (PIECE_SIZE, PIECE_SIZE))

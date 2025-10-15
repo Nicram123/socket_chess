@@ -71,7 +71,7 @@ class Figure():
           obj = Queen(col)
           obj.changingThePawnAuthorityFlagNoMoreThanOne = 0
           img = col + 'Q' + '.png'
-          img = pygame.image.load(f'{img}').convert_alpha()
+          img = pygame.image.load(f'pictures/{img}').convert_alpha()
           typ = col + 'Q'
           board.board[y][x] = typ
           del board.pieces[(y, x)] 
@@ -81,7 +81,7 @@ class Figure():
           obj = Rook(col)
           obj.changingThePawnAuthorityFlagNoMoreThanOne = 0
           img = col + 'R' + '.png'
-          img = pygame.image.load(f'{img}').convert_alpha()
+          img = pygame.image.load(f'pictures/{img}').convert_alpha()
           typ = col + 'R'
           board.board[y][x] = typ
           del board.pieces[(y, x)] 
@@ -91,7 +91,7 @@ class Figure():
           obj = Bishop(col)
           obj.changingThePawnAuthorityFlagNoMoreThanOne = 0
           img = col + 'B' + '.png' 
-          img = pygame.image.load(f'{img}').convert_alpha()
+          img = pygame.image.load(f'pictures/{img}').convert_alpha()
           typ = col + 'B'
           board.board[y][x] = typ
           del board.pieces[(y, x)] 
@@ -101,7 +101,7 @@ class Figure():
           obj = Knight(col)
           obj.changingThePawnAuthorityFlagNoMoreThanOne = 0
           img = col + 'N' + '.png'
-          img = pygame.image.load(f'{img}').convert_alpha()
+          img = pygame.image.load(f'pictures/{img}').convert_alpha()
           typ = col + 'N' 
           board.board[y][x] = typ
           del board.pieces[(y, x)] 
@@ -111,7 +111,7 @@ class Figure():
           obj = Queen(col)
           obj.changingThePawnAuthorityFlagNoMoreThanOne = 0
           img = col + 'Q' + '.png'
-          img = pygame.image.load(f'{img}').convert_alpha()
+          img = pygame.image.load(f'pictures/{img}').convert_alpha()
           typ = col + 'Q'
           board.board[y][x] = typ
           board.pieces[(y, x)] = {'obj': obj, 'image': img, 'type': typ}
