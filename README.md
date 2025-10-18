@@ -14,7 +14,8 @@ pip install pygame
 ```bash
 python main.py
 ```
-<img width="742" height="782" alt="image" src="https://github.com/user-attachments/assets/adbfb14e-1b05-4e69-918e-76c5395041c1" />
+<img src="https://github.com/user-attachments/assets/adbfb14e-1b05-4e69-918e-76c5395041c1" width="300" alt="Strateg w czerwonym" />
+
 4. Funkcjonalności: 
 - Rozgrywka między dwoma graczami
 - Możliwość ruchu figurami
